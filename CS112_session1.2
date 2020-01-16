@@ -1,0 +1,12 @@
+#David is a high school junior. One of David's favorite hobbies is to play videogames, and for a long time, David has been dreaming with a PS4. However, David's parents are worried about his grades. In the last year, David did not perform that well in school, and they think that if they give David a PS4, it will make David's grades even lower. Apart from that, they are also worried about David's health. David never practices sports, and he is gaining quite a lot of weight lately! But David's parents also love him. He is indeed a good, caring son, and they decided to challenge David. They will give him a PS4 if David gets a score higher or equal to 1500 on his SAT exams and if David manages to lose 3 kilograms and improves his cholesterol levels until his next medical exams (coming in12 months!). Before agreeing/disagreeing with anything, David decides to create a simple predictive model to see if he has chances in meeting his parents' expectations or if he should just insist on getting a PS4. 
+
+#David assigned to each variable a "weight" based on his perception of how much his parents value each condition. He believes that even if all the conditions are not met, he still can get a PS4 if the dependent variable presents a final result that is higher to 0.5
+SAT_score <- 0.4
+
+lose_weight <- 0.25
+
+medical_exams <- 0.35
+
+#The coeffiencients represents probabilities of that happening, based on David's own perception of his capabilities and commitiment
+PS4 <- 0.2*SAT_score + 0.35*lose_weight+0.45*medical_exams + 30*rnorm(200)
+PS4
