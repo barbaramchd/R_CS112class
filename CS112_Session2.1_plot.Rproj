@@ -1,0 +1,9 @@
+install.packages("Matching")
+
+library(Matching)
+
+data(lalonde)
+
+lm1 <- lm(re78 ~ educ, data = lalonde)
+plot(lalonde$educ, lalonde$re78)
+abline(lm1, col = "green", lwd = 1)
